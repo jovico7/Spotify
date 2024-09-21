@@ -10,8 +10,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('artists', AlbumController::class);
+Route::resource('albums', AlbumController::class);
 Route::resource('artists', ArtistController::class);
-Route::resource('artists', SongController::class);
-Route::resource('artists', PlaylistController::class);
-
+Route::resource('songs', SongController::class);
+Route::resource('playlists', PlaylistController::class);
