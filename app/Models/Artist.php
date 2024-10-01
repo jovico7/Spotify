@@ -9,6 +9,8 @@ class Artist extends Model
 {
     use HasFactory;
 
+    protected $table = 'tbl_artists';
+
     // Un artista puede tener varios álbumes
     public function albums()
     {
