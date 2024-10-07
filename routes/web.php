@@ -8,10 +8,11 @@ use App\Http\Controllers\PlaylistController;
 use App\Http\Controllers\CrudController;
 
 Route::get('/', function () {
-return view('admin/crud');
+return view('index');
 });
 
-Route::get('/api/lista', [ArtistController::class, 'listar']);
+Route::get('/api/artistas', [ArtistController::class, 'listar']);
+Route::get('/api/canciones', [ArtistController::class, 'listar']);
 
 Route::resource('albums', AlbumController::class);
 Route::resource('artists', ArtistController::class);

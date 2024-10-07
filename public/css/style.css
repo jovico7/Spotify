@@ -1,0 +1,51 @@
+/* Nav Bar*/
+
+.bg-negro {
+    background-color: black;
+}
+
+.centrar {
+    justify-content: center;
+}
+
+.icono {
+    margin-left: 15px;
+}
+
+
+/* Página Principal */
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 62px);
+    gap: 0;
+    background-color: black;
+}
+
+.contenedor-1 {
+    width: 20%;
+    height: 90vh;
+    margin-left: 8px;
+    margin-top: 0px;
+    margin-right: 4px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.contenedor-2 {
+    width: 80%;
+    height: 90vh;
+    margin-right: 8px;
+    margin-top: 0px;
+    margin-left: 4px;
+    background-color: yellow;
+    display: inline-block;
+    border-radius: 10px;
+}
