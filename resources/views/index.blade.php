@@ -30,10 +30,12 @@
     
     <!-- Página -->
     <div class="contenedor">
-        <div class="contenedor-1"></div>
-        <div class="contenedor-2"></div>
+        <div id="leftDiv" class="contenedor-1"></div>
+        <div id="divider" class="divider"></div>
+        <div id="rightDiv" class="contenedor-2"></div>
     </div>
 </body>
+<script src="{{ asset('js/drag.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
