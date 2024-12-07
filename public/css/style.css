@@ -1,0 +1,78 @@
+/* Nav Bar*/
+
+.bg-negro {
+    background-color: black;
+}
+
+.centrar {
+    justify-content: center;
+}
+
+.icono {
+    margin-left: 15px;
+}
+
+
+/* Página Principal */
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 62px);
+    gap: 0;
+    background-color: black;
+}
+
+.contenedor-1 {
+    width: 20%;
+    height: 90vh;
+    margin-left: 8px;
+    margin-right: 0;
+    background-color: red;
+    border-radius: 10px;
+    transition: width 0.1s;
+}
+
+.contenedor-2 {
+    width: 80%;
+    height: 90vh;
+    margin-right: 8px;
+    margin-left: 0;
+    background-color: yellow;
+    border-radius: 10px;
+    transition: width 0.1s;
+}
+
+.divider {
+    width: 2px;
+    height: 90vh;
+    margin: 0 4px;
+    position: relative;
+    /* Necesario para el pseudo-elemento */
+}
+
+.divider:hover {
+    background-color: #888;
+    cursor: grab;
+}
+
+.divider:active {
+    background-color: white;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    /* Extiende el área a la izquierda */
+    right: -20px;
+    /* Extiende el área a la derecha */
+    bottom: 0;
+    cursor: grab;
+}
